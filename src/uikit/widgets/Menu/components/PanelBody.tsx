@@ -63,6 +63,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
             >
               {isPushed &&
                 entry.items.map((item,key) => (
+                  // eslint-disable-next-line react/no-array-index-key
                   <MenuEntry key={key.toString()} secondary isActive={item.href === location?.pathname} onClick={handleClick}>
                     <MenuLink target={item.target} href={item?.href}>
                       <LinkLabel isPushed={isPushed} style={{paddingLeft: '19px'}}>{intl(`menu.${item.label}`)}</LinkLabel>

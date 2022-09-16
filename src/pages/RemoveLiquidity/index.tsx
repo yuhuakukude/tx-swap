@@ -109,7 +109,7 @@ export default function RemoveLiquidity({
   // allowance handling
   const [signatureData, setSignatureData] = useState<{ v: number; r: string; s: string; deadline: number } | null>(null)
   const [approval, approveCallback] = useApproveCallback(parsedAmounts[Field.LIQUIDITY], ROUTER_ADDRESS)
-  async function onAttemptToApprove() {
+  const onAttemptToApprove = async () => {
     if (!pairContract || !pair || !library) throw new Error('missing dependencies')
     const liquidityAmount = parsedAmounts[Field.LIQUIDITY]
     if (!liquidityAmount) throw new Error('missing liquidity amount')
@@ -189,7 +189,7 @@ export default function RemoveLiquidity({
 
   // tx sending
   const addTransaction = useTransactionAdder()
-  async function onRemove() {
+  const onRemove = async () => {
     if (!chainId || !library || !account) throw new Error('missing dependencies')
     const { [Field.CURRENCY_A]: currencyAmountA, [Field.CURRENCY_B]: currencyAmountB } = parsedAmounts
     if (!currencyAmountA || !currencyAmountB) {
@@ -207,7 +207,7 @@ export default function RemoveLiquidity({
     const liquidityAmount = parsedAmounts[Field.LIQUIDITY]
     if (!liquidityAmount) throw new Error('missing liquidity amount')
 
-    
+
     // console.log('---ETHER---', ETHER, currencyA, currencyB)
     const currencyBIsETH = currencyB === ETHER
     const oneCurrencyIsETH = currencyA === ETHER || currencyBIsETH
@@ -329,7 +329,7 @@ export default function RemoveLiquidity({
     }
   }
 
-  function modalHeader() {
+  const modalHeader = () => {
     return (
       <AutoColumn gap="md" style={{ marginTop: '20px' }}>
         <RowBetween align="flex-end">
@@ -363,7 +363,7 @@ export default function RemoveLiquidity({
     )
   }
 
-  function modalBottom() {
+  const modalBottom = () => {
     return (
       <>
         <RowBetween>

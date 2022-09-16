@@ -3,7 +3,7 @@ import tokens from 'config/constants/tokens'
 import { Address } from 'config/constants/types'
 
 export const getAddress = (_address: Address): string => {
-  const mainNetChainId = 66
+  const mainNetChainId = 8989
   const chainId = process.env.REACT_APP_CHAIN_ID
   return address[chainId] ? _address[chainId] : _address[mainNetChainId]
 }

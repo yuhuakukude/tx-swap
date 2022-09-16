@@ -20,6 +20,7 @@ const PancakeToggle: React.FC<PancakeToggleProps> = ({ checked, scale = scales.M
 }
 
 PancakeToggle.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   scale: scales.MD,
 }
 

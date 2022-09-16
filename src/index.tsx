@@ -9,8 +9,8 @@ import MulticallUpdater from './state/multicall/updater'
 import TransactionUpdater from './state/transactions/updater'
 import ToastListener from './components/ToastListener'
 import LocalStorageContextProvider, { Updater as LocalStorageContextUpdater } from './components/Info/contexts/LocalStorage'
-import TokenDataContextProvider, { Updater as TokenDataContextUpdater } from './components/Info/contexts/TokenData'
-import PairDataContextProvider, { Updater as PairDataContextUpdater } from './components/Info/contexts/PairData'
+import TokenDataContextProvider  from './components/Info/contexts/TokenData'
+import PairDataContextProvider  from './components/Info/contexts/PairData'
 import ApplicationContextProvider from './components/Info/contexts/Application'
 import GlobalDataContextProvider from './components/Info/contexts/GlobalData'
 import Providers from './Providers'
@@ -53,12 +53,10 @@ ReactDOM.render(
           <MulticallUpdater />
           <ToastListener />
           <LocalStorageContextUpdater />
-          <TokenDataContextUpdater />
-          <PairDataContextUpdater />
         </>
         <ResetCSS />
         <GlobalStyle />
-        <App />    
+        <App />
       </InfoProviders>
     </Providers>
   </StrictMode>,

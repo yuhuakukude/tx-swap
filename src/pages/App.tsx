@@ -3,7 +3,6 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import { ConnectToChain } from 'connectors'
 import { useActiveWeb3React2 } from 'hooks'
-import { useFetchPriceList, usePoolFetchPublicData } from 'state/hooks'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import AddLiquidity from './AddLiquidity'
@@ -17,10 +16,8 @@ import FarmsPage from './Farms'
 import { RedirectPathToSwapOnly } from './Swap/redirects'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
 import Menu from '../components/Menu'
-import useGetDocumentTitlePrice from '../hooks/useGetDocumentTitlePrice'
 // import NotPage from './404'
 import HomePage from './Home'
-import HeadMine from './HeadMine'
 // import 'antd/dist/antd.css'
 
 const AppWrapper = styled.div`
@@ -38,8 +35,8 @@ const BodyWrapper = styled.div`
 export default function App() {
   const { chainId, active } = useActiveWeb3React2()
   // 初始化获取价格
-  useFetchPriceList()
-  usePoolFetchPublicData()
+  // useFetchPriceList()
+  // usePoolFetchPublicData()
 
   useEffect(() => {
     // const storedLangCode = localStorage.getItem(CACHE_KEY)
@@ -54,7 +51,7 @@ export default function App() {
     }
   }, [chainId, active])
 
-  useGetDocumentTitlePrice()
+  // useGetDocumentTitlePrice()
   return (
     <Suspense fallback={null}>
       <HashRouter>
@@ -64,7 +61,6 @@ export default function App() {
               <Popups />
               <Web3ReactManager>
                 <Switch>
-                  <Route exact path="/kns" component={HeadMine} />
                   <Route exact strict path="/swap" component={Swap} />
                   <Route exact strict path="/find" component={PoolFinder} />
                   <Route exact strict path="/pool" component={Pool} />

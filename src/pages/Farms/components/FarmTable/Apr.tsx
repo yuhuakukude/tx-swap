@@ -9,6 +9,7 @@ import ApyButton from '../FarmCard/ApyButton'
 
 export interface AprProps {
   value: string
+  // eslint-disable-next-line react/no-unused-prop-types
   multiplier: string
   lpLabel: string
   tokenAddress?: Address

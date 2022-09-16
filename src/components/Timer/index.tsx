@@ -49,7 +49,7 @@ const TooltipContent = ({ blockNumber }) => (
     <Text color="body" mb="10px" fontWeight="600">
       Block {blockNumber}
     </Text>
-    <Link external href={`https://www.oklink.com/okexchain/block/${blockNumber}`}>
+    <Link external href={`https://www.telegramx.link/block/${blockNumber}`}>
       View on okLink
     </Link>
   </>

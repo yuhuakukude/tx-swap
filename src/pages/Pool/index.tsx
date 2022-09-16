@@ -26,9 +26,7 @@ import AppBody from '../AppBody'
 export default function PoolFinderPool() {
   const theme = useContext(ThemeContext)
   const { account } = useActiveWeb3React()
-  const TranslateString = useI18n()
   const intl = useIntl()
-
   // fetch the user's balances of all tracked V2 LP tokens
   const trackedTokenPairs = useTrackedTokenPairs()
   const tokenPairsWithLiquidityTokens = useMemo(
@@ -78,7 +76,7 @@ export default function PoolFinderPool() {
             <AutoColumn gap="12px" style={{ width: '100%' }}>
               <RowBetween padding="0 11px 0 0">
                 <Text color={theme.colors.text}>{intl('pool.yourLiquidity')}</Text>
-                <Question 
+                <Question
                   text={intl('pool.yourLiquidityHint')}
                 />
               </RowBetween>

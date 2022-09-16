@@ -422,11 +422,11 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd0A1E359811322d97991E03f863a0C30C2cF029C/logo.png"
     },
     {
-      "name": "Wrapped Ether2",
-      "address": "0x7c2e817E1E9d40C022c2f08804d3e67D07526f83",
-      "symbol": "WETH",
+      "name": "Wrapped TX",
+      "address": "0xF6c5377251Fa00B086FeCd907b1404aDb2845BB8",
+      "symbol": "WTX",
       "decimals": 18,
-      "chainId": 65,
+      "chainId": 8989,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd0A1E359811322d97991E03f863a0C30C2cF029C/logo.png"
     }
   ]

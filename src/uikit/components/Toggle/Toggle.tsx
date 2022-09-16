@@ -14,6 +14,7 @@ const Toggle: React.FC<ToggleProps> = ({ checked, scale = scales.MD, ...props })
 };
 
 Toggle.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   scale: scales.MD,
 };
 

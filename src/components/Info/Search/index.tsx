@@ -290,7 +290,7 @@ export const Search = ({ small = false }) => {
 
   // eslint-disable-next-line
   const uniquePairs = []
-  
+
   const pairsFound = {}
   if (allPairs)
     allPairs.map((pair) => {
@@ -426,7 +426,7 @@ export const Search = ({ small = false }) => {
   const [tokensShown, setTokensShown] = useState(3)
   const [pairsShown, setPairsShown] = useState(3)
 
-  function onDismiss () {
+  const onDismiss = () => {
     setPairsShown(3)
     setTokensShown(3)
     toggleMenu(false)

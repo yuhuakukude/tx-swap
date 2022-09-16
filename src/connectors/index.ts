@@ -25,10 +25,10 @@ export function getNetworkLibrary (): Web3Provider {
 }
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [66, 65],
+  supportedChainIds: [8989],
 })
 
-export const bscConnector = new BscConnector({ supportedChainIds: [66, 65] })
+export const bscConnector = new BscConnector({ supportedChainIds: [8989] })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
@@ -65,21 +65,21 @@ export const ConnectToChain = async (chainId: number, isFirst = false) => {
   if (typeof ethereum === "undefined") {
     console.log("MetaMask is not installed!")
   }
-  if (isFirst === false && (chainId === 65 || chainId === 66)) {
+  if (isFirst === false && (chainId === 8989 || chainId === 8989)) {
     return
   }
 
   const ChainInfo = [
     {
       chainId: `0x${NETWORK_CHAIN_ID.toString(16)}`,
-      chainName: NETWORK_CHAIN_ID === 65 ? "OKT Test Chain" : "OKT Chain Mainnet",
+      chainName: 'TX Chain Mainnet',
       nativeCurrency: {
-        name: "OKT",
-        symbol: "OKT",
+        name: "TX",
+        symbol: "TX",
         decimals: 18,
       },
-      rpcUrls: [NETWORK_CHAIN_ID === 65 ? 'https://exchaintestrpc.okex.org' : 'https://exchainrpc.okex.org'],
-      blockExplorerUrls: [NETWORK_CHAIN_ID === 65 ? 'https://www.oklink.com/okexchain/' : 'https://www.oklink.com/okexchain'],
+      rpcUrls: 'https://tx.telegramx.space',
+      blockExplorerUrls: 'https://www.telegramx.link/',
     },
   ]
 

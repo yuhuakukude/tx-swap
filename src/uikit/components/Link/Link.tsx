@@ -19,6 +19,7 @@ const Link: React.FC<LinkProps> = ({ external, ...props }) => {
 };
 
 Link.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   color: "primary",
 };
 

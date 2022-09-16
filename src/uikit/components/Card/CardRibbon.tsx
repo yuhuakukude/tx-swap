@@ -60,6 +60,7 @@ const CardRibbon: React.FC<CardRibbonProps> = ({ variantColor, text, ribbonPosit
 };
 
 CardRibbon.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   ribbonPosition: "right",
 };
 

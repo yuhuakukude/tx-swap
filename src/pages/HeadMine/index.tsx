@@ -51,7 +51,7 @@ const HeadMine = () => {
 
   const statedOKT = parseFloat(HEAD_MINE_OKT_TOTAL) - parseFloat( getKnsBalance('OKT'))
   const statedOKB = parseFloat(HEAD_MINE_OKT_TOTAL) - parseFloat( getKnsBalance('OKB'))
-  
+
   // const totalSupply = use_OKT_totalSupply()
   useEffect(() => {
     setFristKnsBalanceAsync(kns_balance)(dispatch)
@@ -105,7 +105,6 @@ const HeadMine = () => {
     <div style={{ height: 40 }} />
     <Flex style={{zIndex: 0}}>
       <OKTCard>
-        <HeadMineCard isLive={isLive} balance={oktBalance} knsBalance={user_okt_kns_balance} onSupply={onSupply} unStake={unStake} type="OKT" totalSupply={OKTSupply} />
         <AppBodyBox>
           <TotalVolume>
             <Progress primaryStep={100 - getProgress(getKnsBalance('OKT'), undefined, HEAD_MINE_OKT_TOTAL)} scale="md" />
@@ -117,7 +116,6 @@ const HeadMine = () => {
         </AppBodyBox>
       </OKTCard>
       <OKBCard>
-        <HeadMineCard isLive={isLive} balance={okbBalance} knsBalance={user_okb_kns_balance} onSupply={onSupply} unStake={unStake} type="OKB" totalSupply={OKBSupply} />
         <AppBodyBox>
           <TotalVolume>
             <Progress primaryStep={100 - getProgress(getKnsBalance('OKB'), undefined, HEAD_MINE_OKB_TOTAL)} scale="md" />
@@ -139,7 +137,7 @@ const HeadMine = () => {
       content={() => (<div>test</div>)}
     />
  </>:
-   
+
         <MobileBox>
           {isLive ? <Countdown /> : <div style={{ filter: 'grayscale(100%)', userSelect: 'none', opacity: 0.4 }}>
             <Countdown />
