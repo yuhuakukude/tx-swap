@@ -7,7 +7,7 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const CAKE = new Token(ChainId.MAINNET, WETH[ChainId.OKT].address, 18, 'CAKE', 'PancakeSwap Token')
+export const CAKE = new Token(ChainId.MAINNET, WETH[ChainId.MAINNET].address, 18, 'CAKE', 'PancakeSwap Token')
 export const WOKT = new Token(ChainId.MAINNET, WETH[ChainId.MAINNET].address, 18, 'WOKT', 'Wrapped OKT')
 export const DAI = new Token(ChainId.MAINNET, '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', 18, 'BUSD', 'Binance USD')
@@ -29,8 +29,7 @@ export const ETH = new Token(
 )
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.OKT]: [WETH[ChainId.OKT]],
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]
 }
 
 // used to construct intermediary pairs for trading
