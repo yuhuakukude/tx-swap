@@ -2,14 +2,14 @@ import address from 'config/constants/contracts'
 import tokens from 'config/constants/tokens'
 import { Address } from 'config/constants/types'
 
-export const getAddress = (_address: Address): string => {
+export const getAddress = (_address: Address | string): string => {
   const mainNetChainId = 8989
   const chainId = process.env.REACT_APP_CHAIN_ID
   return address[chainId] ? _address[chainId] : _address[mainNetChainId]
 }
 
 export const getCakeAddress = () => {
-  return getAddress(tokens.kns.address)
+  return getAddress(tokens.usdt.address)
 }
 export const getMasterChefAddress = () => {
   return getAddress(address.masterChef)
@@ -37,8 +37,8 @@ export const getKnsPoolAddress = () => {
   return getAddress(address.KNSPOOL)
 }
 export const get_KNS_address = () => {
-  return getAddress(tokens.kns.address)
+  return getAddress(tokens.usdt.address)
 }
 export const get_OKB_address = () => {
-  return getAddress(tokens.okb.address)
+  return getAddress(tokens.usdt.address)
 }

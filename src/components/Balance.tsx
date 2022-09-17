@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import CountUp from 'react-countup'
+import { CountUp } from 'use-count-up'
 import { Text } from 'uikit'
 
 interface TextProps {
@@ -24,7 +24,7 @@ const Balance: React.FC<BalanceProps> = ({ value, fontSize, color, decimals, isD
 
   return (
     <Text bold={bold} color={isDisabled ? 'textDisabled' : color} fontSize={fontSize}>
-      <CountUp start={previousValue.current} end={value} decimals={decimals} duration={1} separator="," />
+      <CountUp start={previousValue.current} end={value} decimalPlaces={decimals} duration={1} thousandsSeparator="," />
       {value && unit && <span>{unit}</span>}
     </Text>
   )

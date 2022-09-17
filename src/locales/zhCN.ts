@@ -159,7 +159,7 @@ const locale = {
   'find.yourLiquidityHint': '当您增加流动性时，您会得到代表您份额的资金池代币。这些代币会自动赚取与您在流动性池中的份额成比例的费用，并可在任何时候赎回。',
   'find.removeTokensHint': '移除您的流动性池代币会将您的份额按当前比率转换回基础代币，与您在资金池中的份额成比例。赚取的费用将包含在您收到的金额中。',
   'find.poolFound': '找到流动性池！',
-  'find.notLiquidityPool': '您还没有在这个池子中添加流动性', 
+  'find.notLiquidityPool': '您还没有在这个池子中添加流动性',
   'find.noPoolFound': "没有找到池子。",
   'find.createPool': "创建池子。",
   'find.invalidPair': "无效的代币对。",
@@ -281,25 +281,25 @@ const locale = {
   'question1': 'What’s the difference between a Basic Sale and Unlimited Sale?',
   'description1forQ1': 'In the Basic Sale, every user can commit a maximum of about 100 USD worth of CAKE-OKT LP Tokens. We calculate the maximum LP amount about 30 minutes before each IFO. The Basic Sale has no participation fee.',
   'description2forQ1': 'In the Unlimited Sale, there’s no limit to the amount of CAKE-OKT LP Tokens you can commit. However, there’s a fee for participation: see below.',
-  
+
   'question2': 'Which sale should I commit to? Can I do both?',
   'description1forQ2': 'You can choose one or both at the same time! If you’re only committing a small amount, we recommend the Basic Sale first. Just remember you need a MangoSwap Profile in order to participate.',
-  
+
   'question3': 'How much is the participation fee?',
   'description1forQ3': 'There’s only a participation fee for the Unlimited Sale: there’s no fee for the Basic Sale.',
   'description2forQ3': 'The fee will start at 1%.',
   'description3forQ3': 'The 1% participation fee decreases in cliffs, based on the percentage of overflow from the “Unlimited” portion of the sale.',
-  
+
   'question4': 'Where does the participation fee go?',
   'description1forQ4': 'We burn it. The CAKE-OKT LP tokens from the participation fee will be decomposed, then we use the OKT portion to market buy the CAKE equivalent, then finally throw all of the CAKE into the weekly token burn.',
-  
+
   'question5': 'How can I get an achievement for participating in the IFO?',
   'description1forQ5': 'You need to contribute a minimum of about 10 USD worth of CAKE-OKT LP Tokens to either sale.',
   'description2forQ5': 'You can contribute to one or both, it doesn’t matter: only your overall contribution is counted for the achievement.',
 
    // 补充添加
   'supple.transactionSubmitted': '交易已提交',
-  'supple.viewOklink': '在oklink查看',
+  'supple.viewOklink': '在txlink查看',
   'supple.close': '关闭',
   'supple.confirmSwap': '确认兑换',
   'supple.priceUpdated': '价格更新',

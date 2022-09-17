@@ -22,12 +22,12 @@
       "logoURI": "https://cdridge.oss-cn-shanghai.aliyuncs.com/telegram_pocket/TX.png"
     },
     {
-      "name": "USDT Token",
-      "symbol": "USDT",
+      "name": "USTX Token",
+      "symbol": "USTX",
       "address": "0xC41A356311fC63CaBa3dE686c80a6D4a55ABFFD6",
       "chainId": 8989,
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+      "logoURI": "https://cdridge.oss-cn-shanghai.aliyuncs.com/telegram_pocket/TX4D.png"
     }
   ]
 }

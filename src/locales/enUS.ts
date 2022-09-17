@@ -283,18 +283,18 @@ const locale = {
   'question1': 'What’s the difference between a Basic Sale and Unlimited Sale?',
   'description1forQ1': 'In the Basic Sale, every user can commit a maximum of about 100 USD worth of MGS-OKT LP Tokens. We calculate the maximum LP amount about 30 minutes before each IFO. The Basic Sale has no participation fee.',
   'description2forQ1': 'In the Unlimited Sale, there’s no limit to the amount of MGS-OKT LP Tokens you can commit. However, there’s a fee for participation: see below.',
-  
+
   'question2': 'Which sale should I commit to? Can I do both?',
   'description1forQ2': 'You can choose one or both at the same time! If you’re only committing a small amount, we recommend the Basic Sale first. Just remember you need a MangoSwap Profile in order to participate.',
-  
+
   'question3': 'How much is the participation fee?',
   'description1forQ3': 'There’s only a participation fee for the Unlimited Sale: there’s no fee for the Basic Sale.',
   'description2forQ3': 'The fee will start at 1%.',
   'description3forQ3': 'The 1% participation fee decreases in cliffs, based on the percentage of overflow from the “Unlimited” portion of the sale.',
-  
+
   'question4': 'Where does the participation fee go?',
   'description1forQ4': 'We burn it. The MGS-OKT LP tokens from the participation fee will be decomposed, then we use the OKT portion to market buy the MGS equivalent, then finally throw all of the MGS into the weekly token burn.',
-  
+
   'question5': 'How can I get an achievement for participating in the IFO?',
   'description1forQ5': 'You need to contribute a minimum of about 10 USD worth of MGS-OKT LP Tokens to either sale.',
   'description2forQ5': 'You can contribute to one or both, it doesn’t matter: only your overall contribution is counted for the achievement.',
@@ -302,7 +302,7 @@ const locale = {
 
   // 补充添加
   'supple.transactionSubmitted': 'Transaction submitted',
-  'supple.viewOklink': 'View on oklink',
+  'supple.viewOklink': 'View on txlink',
   'supple.close': 'Close',
   'supple.confirmSwap': 'Confirm Swap',
   'supple.priceUpdated': 'Price Updated',

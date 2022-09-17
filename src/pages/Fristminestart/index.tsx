@@ -17,7 +17,7 @@ import { KNS_ADDRESS } from 'config/constants/contracts'
 import Countdown from 'components/countdown'
 import okt_kns from 'assets/svg/okt_kns.svg'
 import PoolCard from './components/PoolCard'
- 
+
 import logo_MangoSwap from './assets/logo_MangoSwap.png'
 
 const StyledHome2 = styled.div<{ hintVisible?: boolean }>`
@@ -163,7 +163,6 @@ function Fristminestart () {
   const isLive = +new Date() < HEAD_MINE_END_TIME
   return (
     <>
-      <BrowserView>
       <StyledHome2>
         <div className="header">
           <img className="logo" src={logo_MangoSwap} alt="" />
@@ -211,8 +210,6 @@ function Fristminestart () {
           Earn MGS
         </button>
       </StyledHome2>
-      </BrowserView>
-      <MobileOnlyView>
         <MobileStyle>
           <RowBetween>
             <img className="logo" src={logo_MangoSwap} alt="" />
@@ -236,7 +233,6 @@ function Fristminestart () {
             Earn MGS
         </button>
         </MobileStyle>
-      </MobileOnlyView>
     </>
   )
 }

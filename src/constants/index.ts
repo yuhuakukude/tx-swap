@@ -9,7 +9,7 @@ type ChainTokenList = {
 
 export const CAKE = new Token(ChainId.MAINNET, WETH[ChainId.MAINNET].address, 18, 'CAKE', 'PancakeSwap Token')
 export const WOKT = new Token(ChainId.MAINNET, WETH[ChainId.MAINNET].address, 18, 'WOKT', 'Wrapped OKT')
-export const USDT = new Token(ChainId.MAINNET, '0xC41A356311fC63CaBa3dE686c80a6D4a55ABFFD6', 18, 'USDT', 'Tether USD')
+export const USDT = new Token(ChainId.MAINNET, '0xC41A356311fC63CaBa3dE686c80a6D4a55ABFFD6', 18, 'ustx', 'Tether USD')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]

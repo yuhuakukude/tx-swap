@@ -5,6 +5,7 @@ export interface Token {
   projectLink?: string
 }
 export interface Address {
+  8989?: string
   65?: string
   56?: string
   66?: string

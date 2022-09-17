@@ -12,9 +12,9 @@ const Table = <T extends DataType>({ _columns, _data }: { _columns: ColumnType<T
   return (
     <table>
       <thead>
-        <tr> 
+        <tr>
           {headers.map((header) => (
-            <StyledTh key={`header-${header.id}`} data-testid={`column-${header.name}`}>
+            <StyledTh key={`header-${header.name}`} data-testid={`column-${header.name}`}>
               {header.label}
 
               {header.sorted && header.sorted.on ? <span data-testid={`sorted-${header.name}`} /> : null}

@@ -28,12 +28,10 @@ const Button = <E extends ElementType = "button"> (props: ButtonProps<E>): JSX.E
       <>
         {isValidElement(startIcon) &&
           cloneElement(startIcon, {
-            mr: "0.5rem",
           })}
         {children}
         {isValidElement(endIcon) &&
           cloneElement(endIcon, {
-            ml: "0.5rem",
           })}
       </>
     </StyledButton>
@@ -48,4 +46,7 @@ Button.defaultProps = {
   disabled: false,
 };
 
+
 export default Button;
+
+

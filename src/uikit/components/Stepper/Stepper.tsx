@@ -30,7 +30,7 @@ const Stepper: React.FC<StepperProps> = ({ title, children }) => {
       <StepperWrapper>
         {React.Children.map(children, (child) => {
           if (React.isValidElement(child)) {
-            return React.cloneElement(child, { numberOfSteps })
+            return React.cloneElement(child )
           }
           return child
         })}

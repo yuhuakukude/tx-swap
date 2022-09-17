@@ -77,8 +77,6 @@ const PanelFooter: React.FC<Props> = ({
             <HamburgerIcon width="24px" color="textSubtle" />
           )}
         </MenuButton>}
-        <OKTBalance currency={currency} currencyBalance={relevantTokenBalances} />
-        
       </SocialEntry>
     </Container>
   )

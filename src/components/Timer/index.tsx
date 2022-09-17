@@ -50,7 +50,7 @@ const TooltipContent = ({ blockNumber }) => (
       Block {blockNumber}
     </Text>
     <Link external href={`https://www.telegramx.link/block/${blockNumber}`}>
-      View on okLink
+      View on txLink
     </Link>
   </>
 )
@@ -69,7 +69,6 @@ const Wrapper: React.FC<TimerProps> = ({
   const shouldDisplayTooltip = showTooltip && tooltipVisible
   return (
     <Flex alignItems="flex-end" position="relative">
-      <BodyTextComponent mr="16px">{timerStage}</BodyTextComponent>
       <div ref={targetRef}>
         <Timer
           minutes={minutes}
