@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@mangoswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0x7396B5572771C7f4DFAf12Abe50485edC9a7bDF2'
+export const ROUTER_ADDRESS = '0x572a8Dd28Df02182B97deac1d922b3EAC349b7f7'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -9,7 +9,7 @@ type ChainTokenList = {
 
 export const CAKE = new Token(ChainId.MAINNET, WETH[ChainId.MAINNET].address, 18, 'CAKE', 'PancakeSwap Token')
 export const WOKT = new Token(ChainId.MAINNET, WETH[ChainId.MAINNET].address, 18, 'WOKT', 'Wrapped OKT')
-export const USDT = new Token(ChainId.MAINNET, '0xC41A356311fC63CaBa3dE686c80a6D4a55ABFFD6', 18, 'ustx', 'Tether USD')
+export const USDT = new Token(ChainId.MAINNET, '0x58a12868Eec1ba590cB289472b871029CC77FB7c', 18, 'ustx', 'Tether USD')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]

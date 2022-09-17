@@ -16,7 +16,7 @@
     {
       "name": "Wrapper TX",
       "symbol": "WTX",
-      "address": "0xF6c5377251Fa00B086FeCd907b1404aDb2845BB8",
+      "address": "0x68909Fea4ca0e80247da6b974c10f225696e00D6",
       "chainId": 8989,
       "decimals": 18,
       "logoURI": "https://cdridge.oss-cn-shanghai.aliyuncs.com/telegram_pocket/TX.png"
@@ -24,7 +24,7 @@
     {
       "name": "USTX Token",
       "symbol": "USTX",
-      "address": "0xC41A356311fC63CaBa3dE686c80a6D4a55ABFFD6",
+      "address": "0x58a12868Eec1ba590cB289472b871029CC77FB7c",
       "chainId": 8989,
       "decimals": 18,
       "logoURI": "https://cdridge.oss-cn-shanghai.aliyuncs.com/telegram_pocket/TX4D.png"
