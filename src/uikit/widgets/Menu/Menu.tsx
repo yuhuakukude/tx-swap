@@ -97,7 +97,7 @@ const Menu: React.FC<NavProps> = ({
       setIsPushed(false)
     }
   }, [isMobile])
-  const location = useLocation()  
+  const location = useLocation()
   useEffect(() => {
     const handleScroll = () => {
       const currentOffset = window.pageYOffset
@@ -144,8 +144,8 @@ const Menu: React.FC<NavProps> = ({
           {/* {profile && <Avatar profile={profile} />} */}
           {isMobile || <>
             <SocialLinks />
-            <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
           </>}
+          <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
         </Flex>
       </StyledNav>}
       <BodyWrapper>

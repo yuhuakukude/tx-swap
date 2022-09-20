@@ -6,6 +6,7 @@ import Button from '../../../components/Button/Button'
 import * as IconModule from '../icons'
 import { LangType } from '../types'
 import MenuButton from './MenuButton'
+import { useIsMobile } from '../../../theme/base'
 
 const Icons = IconModule as unknown as { [key: string]: React.FC<SvgProps> }
 const { LanguageIcon } = Icons
@@ -17,6 +18,8 @@ interface Props {
 }
 
 const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => {
+  const isMobile = useIsMobile()
+
   const handleSetLang = (lang: LangType) => {
     setLang(lang.code)
   }
@@ -25,7 +28,7 @@ const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => {
       position="bottom-left"
       target={
         <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
-          <Text color="textSubtle">{langs.filter((lang) => lang.code === currentLang)[0]?.language || 'UNKNOW'}</Text>
+          {!isMobile && <Text color="textSubtle">{langs.filter((lang) => lang.code === currentLang)[0]?.language || 'UNKNOW'}</Text>}
         </Button>
       }
     >

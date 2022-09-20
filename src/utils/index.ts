@@ -26,7 +26,7 @@ const BSCSCAN_PREFIXES: any = {
 }
 
 export function getBscScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://www.oklink.com${BSCSCAN_PREFIXES[chainId] || BSCSCAN_PREFIXES[ChainId.MAINNET]}`
+  const prefix = `https://www.telegramx.link/`
 
   switch (type) {
     case 'transaction': {

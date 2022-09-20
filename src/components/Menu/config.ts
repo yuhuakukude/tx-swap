@@ -82,24 +82,24 @@ const config: MenuEntry[] = [
     items:[
       {
         label: 'Github',
-        href: 'https://github.com/MangoswapDefi/mangoswap', 
+        href: 'https://github.com/TelegramXDefi/TelegramXswap',
         target: '_blank'
       },
       {
         label: 'Twitter',
-        href: 'https://twitter.com/MangoSwap_1',
+        href: 'https://twitter.com/Eisen_Binance',
         target: '_blank'
       },
       {
         label: 'Telegram',
-        href: 'https://t.me/MangoSwapOfficial',
+        href: ' https://t.me/TXTelegramx',
         target: '_blank'
       },
-      {
-        label: 'Medium',
-        href: 'https://medium.com/@MangoSwap_1',
-        target: '_blank'
-      },
+      // {
+      //   label: 'Medium',
+      //   href: 'https://medium.com/@MangoSwap_1',
+      //   target: '_blank'
+      // },
       // {
       //   label: 'Docs',
       //   href: 'https://github.com/mangoswap/swap/blob/dev/docs/KeyneSwepDocs.pdf',
@@ -111,7 +111,7 @@ const config: MenuEntry[] = [
       //   target: '_blank'
       // }
     ]
-  } 
+  }
 ]
 
 export default config

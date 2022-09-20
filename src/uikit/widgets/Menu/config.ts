@@ -150,70 +150,70 @@ interface SocialsType {
   items?: SocialsType[]
 }
 export const socials: SocialsType[] = [
-  // {
-  //   label: 'Telegram',
-  //   icon: 'TelegramIcon',
-  //   href: 'https://t.me/mangoswap',
-  //   // items: [
-  //   //   {
-  //   //     label: "English",
-  //   //     href: "https://t.me/mangoswap",
-  //   //   },
-  //   //   {
-  //   //     label: "Bahasa Indonesia",
-  //   //     href: "https://t.me/PancakeSwapIndonesia",
-  //   //   },
-  //   //   {
-  //   //     label: "中文",
-  //   //     href: "https://t.me/PancakeSwap_CN",
-  //   //   },
-  //   //   {
-  //   //     label: "Tiếng Việt",
-  //   //     href: "https://t.me/PancakeSwapVN",
-  //   //   },
-  //   //   {
-  //   //     label: "Italiano",
-  //   //     href: "https://t.me/mangoswap_ita",
-  //   //   },
-  //   //   {
-  //   //     label: "русский",
-  //   //     href: "https://t.me/mangoswap_ru",
-  //   //   },
-  //   //   {
-  //   //     label: "Türkiye",
-  //   //     href: "https://t.me/mangoswapturkiye",
-  //   //   },
-  //   //   {
-  //   //     label: "Português",
-  //   //     href: "https://t.me/PancakeSwapPortuguese",
-  //   //   },
-  //   //   {
-  //   //     label: "Español",
-  //   //     href: "https://t.me/PancakeswapEs",
-  //   //   },
-  //   //   {
-  //   //     label: "日本語",
-  //   //     href: "https://t.me/mangoswapjp",
-  //   //   },
-  //   //   {
-  //   //     label: "Français",
-  //   //     href: "https://t.me/mangoswapfr",
-  //   //   },
-  //   //   {
-  //   //     label: "Announcements",
-  //   //     href: "https://t.me/PancakeSwapAnn",
-  //   //   },
-  //   //   {
-  //   //     label: "Whale Alert",
-  //   //     href: "https://t.me/PancakeSwapWhales",
-  //   //   },
-  //   // ],
-  // },
-  // {
-  //   label: 'Twitter',
-  //   icon: 'TwitterIcon',
-  //   href: 'https://twitter.com/mangoswap',
-  // },
+  {
+    label: 'Telegram',
+    icon: 'TelegramIcon',
+    href: 'https://t.me/mangoswap',
+    // items: [
+    //   {
+    //     label: "English",
+    //     href: "https://t.me/mangoswap",
+    //   },
+    //   {
+    //     label: "Bahasa Indonesia",
+    //     href: "https://t.me/PancakeSwapIndonesia",
+    //   },
+    //   {
+    //     label: "中文",
+    //     href: "https://t.me/PancakeSwap_CN",
+    //   },
+    //   {
+    //     label: "Tiếng Việt",
+    //     href: "https://t.me/PancakeSwapVN",
+    //   },
+    //   {
+    //     label: "Italiano",
+    //     href: "https://t.me/mangoswap_ita",
+    //   },
+    //   {
+    //     label: "русский",
+    //     href: "https://t.me/mangoswap_ru",
+    //   },
+    //   {
+    //     label: "Türkiye",
+    //     href: "https://t.me/mangoswapturkiye",
+    //   },
+    //   {
+    //     label: "Português",
+    //     href: "https://t.me/PancakeSwapPortuguese",
+    //   },
+    //   {
+    //     label: "Español",
+    //     href: "https://t.me/PancakeswapEs",
+    //   },
+    //   {
+    //     label: "日本語",
+    //     href: "https://t.me/mangoswapjp",
+    //   },
+    //   {
+    //     label: "Français",
+    //     href: "https://t.me/mangoswapfr",
+    //   },
+    //   {
+    //     label: "Announcements",
+    //     href: "https://t.me/PancakeSwapAnn",
+    //   },
+    //   {
+    //     label: "Whale Alert",
+    //     href: "https://t.me/PancakeSwapWhales",
+    //   },
+    // ],
+  },
+  {
+    label: 'Twitter',
+    icon: 'TwitterIcon',
+    href: 'https://twitter.com/mangoswap',
+  },
 ]
 
 export const MENU_HEIGHT = 64
